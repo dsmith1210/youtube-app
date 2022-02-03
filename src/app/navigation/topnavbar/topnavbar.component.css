@@ -2,6 +2,19 @@
     padding-left: 150px;
 }
 
-.topsearch {
-    padding-right: 150px;
+.search {
+    justify-content: center;
+}
+
+.item {
+    color: blue;
+    
+}
+
+.dropdown {
+    left: 0;
+}
+
+.btn-primary {
+    color: red;
 }
