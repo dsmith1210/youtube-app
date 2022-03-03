@@ -1,0 +1,10 @@
+Main features:
+  Create FireBase database 
+  Linked the database to the website
+  Displayed data from database on top of website in my header component
+  Added following attributes to new component:
+     -Put name information on top left
+     -Put mix_ID on top middle
+     -Put GitHub link on top right
+Bonus:
+  -Linked mix_ID directly to my email webpage
