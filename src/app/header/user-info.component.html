@@ -1,1 +1,16 @@
-<p>User Info component loading...</p>
+<p *ngIf = "myInfo == undefined">Failed fetching user info</p>
+<div *ngIf = "myInfo != undefined">
+    <div class = "container-fluid">
+        <div class = "d-flex flex-row justify-content-between">
+            <div class = "flex-column">
+                User: {{myInfo.firstname}} {{myInfo.lastname}}
+            </div>
+            <div class = "flex-column">
+                <a href = "mailto:{{myInfo.mix_ID}}@mix.wvu.edu"> Mix ID: {{myInfo.mix_ID}} </a>
+            </div>
+            <div class = "flex-column">
+                <a href = {{myInfo.GitHub}} >GitHub: {{myInfo.GitHub}}</a>
+            </div>
+        </div>
+    </div>
+</div>
