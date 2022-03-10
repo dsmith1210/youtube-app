@@ -1,0 +1,7 @@
+Main features:
+Create layout component named “videos.service” using typescript to attach services to database code
+Added the following attributes to the class “some_typescript_file.ts”:
+  - Added method "getVideos()" to retrieve multiple video card data
+  - Added method "getVideo()" to retrieve singular video card data
+Modified the "video_item.model" typescript component
+  - Another parameter and field were added called "duration" which is a string that tracks the length of a video
