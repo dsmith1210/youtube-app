@@ -1,0 +1,5 @@
+Main features:
+  Deployed website to internet with public URL
+  Configured the project with Angular Fire and created a database service class
+  Created an AddVideo component that accesses the Firebase backend
+  Created a search form for each attribute of the videos on the admin route
