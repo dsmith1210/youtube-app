@@ -10,6 +10,8 @@ import { TopNavBarComponent } from './navigation/topnavbar/topnavbar.component';
 import { VideoCardsComponent } from './navigation/videocards/videocard.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Video1Component } from './video/card1-layout.component';
+import { AddVideoComponent } from './add-video/add-video.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,12 +20,14 @@ import { Video1Component } from './video/card1-layout.component';
     BigCardComponent,
     SideNavBarComponent,
     VideoCardsComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    AddVideoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

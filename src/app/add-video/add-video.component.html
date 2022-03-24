@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm="ngForm" (ngSubmit)="addVideo(postForm.value)">
+                <div class="input-group">
+                    <span class="input-group-text">Image Path</span>
+                    <input type="text" class="form-control" ngModel name="img">  
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">View Count</span>
+                    <input type="text" class="form-control" ngModel name="viewcountlow">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">Owner</span>
+                    <input type="text" class="from-control" ngModel name="owner"> 
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">Date</span>
+                    <input type="text" class="form-control" ngModel name="date">
+                </div>
+
+                <button class="btn btn-light" type="submit">
+                    Add Video
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>

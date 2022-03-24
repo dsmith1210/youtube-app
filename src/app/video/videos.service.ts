@@ -2,6 +2,7 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 // import { strictEqual } from "assert";
 import { VideoItemModel } from "./video_item.model";
+import { AngularFireDatabase } from '@angular/fire/compat/database';
 
 @Injectable (
   {providedIn: 'root'}
@@ -21,5 +22,9 @@ export class VideoService {
 
     getVideo(index:number){
         return this.http.get<VideoItemModel>(this.baseUrl + 'videos' + '/' + index + '.json');
+    }
+
+    addVideo(video:VideoItemModel){
+        this.db.list<VideoItemModel>("videos").push(video);
     }
 }
