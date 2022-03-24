@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/you-tube-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

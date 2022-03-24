@@ -12,7 +12,7 @@ export class AppComponent {
   videos: VideoItemModel [] = [];
 
   constructor(){
-    for (var video in mock_video_list){
+    for (var video of mock_video_list){
       console.log(video);
         this.videos.push(video);
     }
