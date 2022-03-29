@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VideoService } from '../video/videos.service';
 import { VideoItemModel } from '../video/video_item.model';
 
 @Component({
@@ -8,7 +9,7 @@ import { VideoItemModel } from '../video/video_item.model';
 })
 export class AddVideoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private vs:VideoService) { }
 
   ngOnInit(): void {
   }
@@ -16,7 +17,7 @@ export class AddVideoComponent implements OnInit {
   addVideo(video:VideoItemModel){
     console.log("You clicked add product");
     console.log(video);
-
+    this.vs.addVideo(video);
   }
 
 }
