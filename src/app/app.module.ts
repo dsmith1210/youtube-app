@@ -33,7 +33,7 @@ import * as firebase from 'firebase/compat';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment, firebase),
+   // AngularFireModule.initializeApp(environment, firebase),
     AngularFirestoreModule
   ],
   providers: [],
