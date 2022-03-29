@@ -26,9 +26,8 @@
               "src/favicon.ico",
               "src/assets",
               {
-                "glob":"bootstrap-icons.svg",
-                "input":
-                "./node_modules/bootstrap-icons/",
+                "glob": "bootstrap-icons.svg",
+                "input": "./node_modules/bootstrap-icons/",
                 "output": "/assets/"
               }
             ],
@@ -106,6 +105,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "YouTube-app:build:production",
+            "firebaseProject": "app-9143d",
+            "firebaseHostingSite": "app-9143d"
           }
         }
       }

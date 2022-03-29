@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "app-9143d"
+  },
+  "targets": {
+    "app-9143d": {
+      "hosting": {
+        "YouTube-app": [
+          "app-9143d"
+        ]
+      }
+    }
   }
 }

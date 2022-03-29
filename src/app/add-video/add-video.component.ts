@@ -16,7 +16,7 @@ export class AddVideoComponent implements OnInit {
   addVideo(video:VideoItemModel){
     console.log("You clicked add product");
     console.log(video);
-    this.vs.addVideo(video);
+
   }
 
 }

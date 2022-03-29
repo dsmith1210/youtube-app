@@ -1,4 +1,3 @@
-import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 // import { strictEqual } from "assert";
 import { VideoItemModel } from "./video_item.model";
@@ -9,22 +8,19 @@ import { AngularFireDatabase } from '@angular/fire/compat/database';
 )
 
 export class VideoService {
-    private baseUrl: string = "https://app-9143d-default-rtdb.firebaseio.com/";
-    private videosEndPoint: string = "videos.json";
 
-    constructor(private http:HttpClient){
+    constructor(private db:AngularFireDatabase){
 
     }
 
-    getVideos() {
-        return this.http.get<VideoItemModel []>(this.baseUrl + this.videosEndPoint);
+    public getVideos() {
+        return this.db.list<VideoItemModel>("videos").valueChanges();
     }
 
-    getVideo(index:number){
-        return this.http.get<VideoItemModel>(this.baseUrl + 'videos' + '/' + index + '.json');
+    public getVideo(index:number){
+        return this.db.list("videos", ref => ref.orderByChild("date").startAt(10)).valueChanges();
     }
 
-    addVideo(video:VideoItemModel){
-        this.db.list<VideoItemModel>("videos").push(video);
+    public addVideo(video:VideoItemModel){
     }
 }

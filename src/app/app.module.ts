@@ -11,7 +11,13 @@ import { VideoCardsComponent } from './navigation/videocards/videocard.component
 import { AppRoutingModule } from './app-routing.module';
 import { Video1Component } from './video/card1-layout.component';
 import { AddVideoComponent } from './add-video/add-video.component';
-import { FormsModule } from '@angular/forms';
+import { firebaseConfig } from 'src/environments/environment';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import * as firebase from 'firebase/compat';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    AngularFireModule.initializeApp(environment, firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
