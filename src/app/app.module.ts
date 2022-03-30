@@ -11,7 +11,6 @@ import { VideoCardsComponent } from './navigation/videocards/videocard.component
 import { AppRoutingModule } from './app-routing.module';
 import { Video1Component } from './video/card1-layout.component';
 import { AddVideoComponent } from './add-video/add-video.component';
-import { firebaseConfig } from 'src/environments/environment';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
