@@ -1,0 +1,7 @@
+Main changes:
+  - Built and deployed website to internet
+  - Added a form to enter video information
+  - Added method to video service component to send data to backend
+  - Used new service method inside form component to send data to backend
+  - Reinstalled firebase libraries several times 
+  - Added storage to budget in angular.json file to remove capacity error
