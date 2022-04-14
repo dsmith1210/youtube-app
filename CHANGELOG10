@@ -1,0 +1,8 @@
+Major additions:
+  - Enabled authentication via Firebase
+  - Added an authentication component
+  - Added an authentication service class
+  - Used the authentication component and service class to allow users to create real accounts that are added into database
+Bonus:
+  - Created the ability for error checking so that login errors can be found more easily
+  - This was added into the onSubmit method in the authentication TypeScript class
