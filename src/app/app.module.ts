@@ -14,6 +14,7 @@ import { environment } from '../environments/environment';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule } from '@angular/forms';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     SideNavBarComponent,
     VideoCardsComponent,
     UserInfoComponent,
-    AddVideoComponent
+    AddVideoComponent,
+    AuthenticationComponent
   ],
   imports: [
     BrowserModule,
